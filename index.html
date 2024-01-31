@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dojo weather</title>
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <span class="title">DojoWeather</span
+        ><span class="cities">
+          <span class="city" onclick="showAlert()">Burbank</span
+          ><span class="city" onclick="showAlert()">Chicago</span
+          ><span class="city" onclick="showAlert()">Dallas</span></span
+        >
+      </div>
+      <div class="body">
+        <span id="cityName">San José </span>
+        <span id="celsOrFar"
+          >show temperature in
+          <select name="grados" onchange="showFar(this)">
+            <option value="text">ºC</option>
+            <option value="text">ºF</option>
+          </select></span
+        >
+      </div>
+      <div id="weather">
+        <div class="row">
+          <div class="day">Today</div>
+          <div><img src="img/some_rain.png" alt="rainy" /></div>
+          <div class="descr">some rain</div>
+          <div class="man">
+            <span class="max" id="temp1">24º</span
+            ><span class="min" id="temp2">18º</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="day">Tomorrow</div>
+          <div><img src="img/some_sun.png" alt="sunny" /></div>
+          <div class="descr">some sun</div>
+          <div class="man">
+            <span class="max" id="temp3">27º</span
+            ><span class="min" id="temp4">19º</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="day">Friday</div>
+          <div><img src="img/some_clouds.png" alt="cloudy" /></div>
+          <div class="descr">some clouds</div>
+          <div class="man">
+            <span class="max" id="temp5">21º</span
+            ><span class="min" id="temp6">16º</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="day">Saturday</div>
+          <div><img src="img/some_sun.png" alt="sunny" /></div>
+          <div class="descr">some sun</div>
+          <div class="man">
+            <span class="max" id="temp7">26º</span
+            ><span class="min" id="temp8">21º</span>
+          </div>
+        </div>
+      </div>
+      <div class="cookie">
+        <img src="img/cookie.png" alt="cookies" />
+        <div>
+          <div><strong>Stop! Cookie time</strong></div>
+          <div class="alert">
+            We use cookies (sadly not the edible one) to personalize content and
+            ads, to provide social media features and to analyse our traffic.
+            <a href="#"> Read more...</a>
+          </div>
+        </div>
+        <div><button onclick="hide()">I Accept</button></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
